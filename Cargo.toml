@@ -12,9 +12,38 @@ keywords     = ["minecraft", "oxidized-mc"]
 categories   = ["game-development"]
 
 [dependencies]
+oxidized-chunks    = "0.1"
+oxidized-registry  = "0.1"
+oxidized-types     = "0.1"
+oxidized-lighting  = "0.1"
+oxidized-mc-types  = "0.1"
+dashmap            = "6"
+rayon              = "1"
+thiserror          = "2"
+tokio              = { version = "1", features = ["sync"] }
+tokio-util         = { version = "0.7", features = ["rt"] }
+tracing            = "0.1"
 
 [dev-dependencies]
 proptest = "1"
+
+[patch.crates-io]
+oxidized-chunks      = { path = "../chunks" }
+oxidized-registry    = { path = "../registry" }
+oxidized-mc-types    = { path = "../mc-types" }
+oxidized-types       = { path = "../types" }
+oxidized-lighting    = { path = "../lighting" }
+oxidized-nbt         = { path = "../nbt" }
+oxidized-compression = { path = "../compression" }
+oxidized-crypto      = { path = "../crypto" }
+oxidized-auth        = { path = "../auth" }
+oxidized-codec       = { path = "../codec" }
+oxidized-chat        = { path = "../chat" }
+oxidized-transport   = { path = "../transport" }
+oxidized-anvil       = { path = "../anvil" }
+oxidized-commands    = { path = "../commands" }
+oxidized-inventory   = { path = "../inventory" }
+oxidized-physics     = { path = "../physics" }
 
 [lints.rust]
 missing_docs   = "warn"
