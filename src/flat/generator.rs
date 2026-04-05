@@ -187,7 +187,7 @@ impl ChunkGenerator for FlatChunkGenerator {
             chunk.set_heightmap(hm.clone());
         }
 
-        // Compute light via the lighting engine (ADR-017).
+        // Compute light via the lighting engine.
         initialize_sky_light(&mut chunk);
         initialize_block_light(&mut chunk);
 

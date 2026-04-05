@@ -2,7 +2,7 @@
 //!
 //! Tracks pending and in-progress chunk generation tasks, dispatching work
 //! to a dedicated [`rayon::ThreadPool`] when neighbor dependencies are
-//! satisfied. See ADR-016 for the full design.
+//! satisfied.
 //!
 //! **This is scaffolding only.** The dispatch loop and actual generation
 //! integration are implemented in feature phases (P23/P26/P36).

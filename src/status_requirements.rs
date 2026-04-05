@@ -2,7 +2,7 @@
 //!
 //! Each [`ChunkStatus`] has a neighbor requirement that must be satisfied
 //! before a chunk can advance to that status. This encodes the vanilla
-//! dependency table from ADR-016, extended for the full 12-status pipeline.
+//! dependency table, extended for the full 12-status pipeline.
 
 use oxidized_types::ChunkPos;
 
@@ -24,7 +24,7 @@ pub struct StatusRequirement {
 
 /// Returns the neighbor requirement for advancing a chunk to the given status.
 ///
-/// The table matches vanilla's generation pipeline (ADR-016). Statuses with
+/// The table matches vanilla's generation pipeline. Statuses with
 /// radius 0 have no neighbor dependencies and can be generated independently.
 ///
 /// # Vanilla neighbor table

@@ -1,7 +1,7 @@
 //! World generation framework.
 //!
 //! Provides the [`ChunkGenerator`] trait, generation status types, and
-//! scheduling infrastructure for parallel chunk generation per ADR-016.
+//! scheduling infrastructure for status-based parallel chunk generation.
 //!
 //! - [`flat`] — flat world generator (uniform layer-based terrain)
 //! - [`priority`] — generation priority levels
