@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/oxidized-mc/worldgen/actions/workflows/ci.yml/badge.svg)](https://github.com/oxidized-mc/worldgen/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Crates.io](https://img.shields.io/crates/v/oxidized-worldgen.svg)](https://crates.io/crates/oxidized-worldgen)
 
 World generation framework — ChunkGenerator, FlatWorldConfig, ChunkStatus pipeline
 
